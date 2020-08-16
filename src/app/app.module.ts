@@ -7,6 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {RouterModule, Route} from '@angular/router'
 import { FormsModule } from '@angular/forms';
+import {MatTabsModule} from '@angular/material/tabs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 const ROUTES: Route[] = [
   {path: '', redirectTo:'welcome', pathMatch: 'full'}, 
@@ -18,13 +22,15 @@ const ROUTES: Route[] = [
 
 @NgModule({
   declarations: [
-    AppComponent, HelloComponent, IframeComponent
+    AppComponent,  HelloComponent, IframeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(ROUTES),
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

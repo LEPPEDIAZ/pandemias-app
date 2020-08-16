@@ -23,9 +23,15 @@ export class IframeComponent  {
       console.log(urlSegments[0]);
       if(routes.path === 'iframe1') {
         this.src = 'https://leppediaz.github.io/Pandemias_Mundiales/dashboard_COVID.html';
-      } else {
+      } 
+      if(routes.path === 'iframe2') {
         this.src = 'https://leppediaz.github.io/Pandemias_Mundiales/dashboard_Ebola.html';
-      }
+      } 
+      if(routes.path === 'iframe3') {
+        this.src = 'https://leppediaz.github.io/Pandemias_Mundiales/dashboard_VIH.html';
+      } 
+      
+     
       
 
     if (this.iframe) {

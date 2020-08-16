@@ -1,9 +1,29 @@
 
-<p>
-  Start editing to see some magic happen :)
-</p>
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+    label="COVID-19"
+    routerLink="classic/iframe1"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+    COVID-19
+  </a>
+  <a mat-tab-link
+    label="Ebola"
+    routerLink="classic/iframe2"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+    Ebola
+  </a>
+  <a mat-tab-link
+    label="VIH"
+    routerLink="classic/iframe3"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+    VIH
+  </a>
+ </nav>
 
-<a routerLink="classic/iframe1">Iframe1</a>
- <br>
-<a routerLink="classic/iframe2">Iframe2</a>
+
+
 <router-outlet></router-outlet>
+
