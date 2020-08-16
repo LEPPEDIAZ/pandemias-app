@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pandemias-app"
+    }
+  },
+  "defaultProject": "pandemias-app",
+  "cli": {
+    "analytics": "64ebb0b0-9ae8-4293-8632-385c59d81084"
+  }
 }
