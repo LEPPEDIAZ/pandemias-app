@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import {MatDialog} from '@angular/material/dialog';
+import { DialogContentExample } from './dialog-content-example';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pandemias-app';
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogContentExample);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }
