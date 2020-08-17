@@ -2,3 +2,12 @@
 
 html, body { height: 100%; background-color: #282828; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-tab-group[vertical] .mat-tab-labels {
+    display: flex;
+    flex-direction: column!important;
+}
+
+mat-tab-group[vertical] {
+    display: flex;
+    flex-direction: row!important;
+}

@@ -1,27 +1,47 @@
 
-<nav mat-tab-nav-bar>
-  <a mat-tab-link
-    label="COVID-19"
-    routerLink="classic/iframe1"
-    routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
-    COVID-19
-  </a>
-  <a mat-tab-link
-    label="Ebola"
-    routerLink="classic/iframe2"
-    routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
-    Ebola
-  </a>
-  <a mat-tab-link
-    label="VIH"
-    routerLink="classic/iframe3"
-    routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
-    VIH
-  </a>
- </nav>
+<mat-tab-group>
+  <mat-tab label="Menu">
+   
+     
+  </mat-tab>
+  <mat-tab label="COVID-19">
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link
+        label="COVID-19"
+        routerLink="classic/iframe1"
+        routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">
+        mapa de COVID-19
+      </a>
+     </nav>
+     
+  </mat-tab>
+  <mat-tab label="Ebola"> 
+    <nav mat-tab-nav-bar>
+  
+      <a mat-tab-link
+        label="Ebola"
+        routerLink="classic/iframe2"
+        routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">
+        mapa de Ebola
+      </a>
+      
+     </nav> </mat-tab>
+  <mat-tab label="VIH">
+    <nav mat-tab-nav-bar>
+
+      <a mat-tab-link
+        label="VIH"
+        routerLink="classic/iframe3"
+        routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">
+        mapa de VIH
+      </a>
+     </nav>
+  </mat-tab>
+</mat-tab-group>
+
 
 
 
