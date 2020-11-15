@@ -2,9 +2,7 @@
   <mat-sidenav position="end" #sidenav  mode="side" class="example-sidenav" [ngStyle]="{ 'width.em': sidenavWidth }" opened="true" (mouseenter)="increase()"
     (mouseleave)="decrease()">
     <div class="logomain"><mat-icon>dashboard</mat-icon></div>
-    <h5 style="margin-left: 5%;" position="start" >Serie de tiempo para casos de contagio:</h5>
-    <img  position="start" style="margin-left: 5%;" src="https://res.cloudinary.com/dbmokzjuz/image/upload/v1605438712/ebola1.png" width=95% height=25%>
-
+  
     <h1 style="color: white">Dashboard COVID</h1>
     <img position="start" style="margin-left: 5%;" [src]="_DomSanitizationService.bypassSecurityTrustUrl(stringImage)" alt="Graph 1" width=95% height=25%/>
   </mat-sidenav>

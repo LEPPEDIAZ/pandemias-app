@@ -50,6 +50,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SidenavEbolaComponent } from './sidenavebola/sidenavebola.component';
 import { HttpModule } from '@angular/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -102,7 +103,8 @@ const ROUTES: Route[] = [
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    HttpModule
+    HttpModule,
+    NgbModule
     
   ],
   exports: [
