@@ -19,17 +19,17 @@
     </body>
      
   </mat-tab>
-  <mat-tab label="COVID-19">
-     <nav mat-tab-nav-bar>
-      <a mat-tab-link (click)="openDialog()">
-        ¿Que estoy viendo?
-      </a>
-     </nav> 
+  <mat-tab> 
+    <ng-template mat-tab-label>
+      <span (click)="searchImage()">COVID-19</span>
+    </ng-template>
      <body>
       <div style="position: relative; left: 0; top: 0; height: 100%;">
         <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><small><a href="//radiohead-99.maps.arcgis.com/apps/Embed/index.html?webmap=8d71dca4e03c421bb983c761bf28df1c&extent=-145.8387,-63.2822,131.3684,59.7463&zoom=true&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=dark" style="color:#0000FF;text-align:left" target="_blank">View larger map</a></small><br><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="only covid" src="//radiohead-99.maps.arcgis.com/apps/Embed/index.html?webmap=8d71dca4e03c421bb983c761bf28df1c&extent=-145.8387,-63.2822,131.3684,59.7463&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=dark"></iframe></div>
       </div>
     </body>
+    <app-sidenav [stringImage]="stringImage"></app-sidenav>
+    
      
   </mat-tab>
   <mat-tab label="Ebola"> 
@@ -43,6 +43,7 @@
         <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Ebola" src="//radiohead-99.maps.arcgis.com/apps/Embed/index.html?webmap=358eef9feeb04ad9b6ad6ae6de96a36b&extent=-88.9272,-22.0697,49.6763,48.7747&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=dark"></iframe></div>
       </div>
     </body>
+    <app-sidenavebola></app-sidenavebola>
   </mat-tab>
   <mat-tab label="VIH">
     <nav mat-tab-nav-bar>
