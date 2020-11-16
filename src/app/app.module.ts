@@ -49,6 +49,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SidenavEbolaComponent } from './sidenavebola/sidenavebola.component';
+import {SidenavVIHComponent } from './sidenavvih/sidenavvih.component'
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -66,7 +67,7 @@ const ROUTES: Route[] = [
 
 @NgModule({
   declarations: [
-    AppComponent,  HelloComponent, IframeComponent, DialogContentExample, DialogContentExampleDialog,SidenavComponent,SidenavEbolaComponent
+    AppComponent,  HelloComponent, IframeComponent, DialogContentExample, DialogContentExampleDialog,SidenavComponent,SidenavEbolaComponent,SidenavVIHComponent
   ],
   imports: [
     BrowserModule,

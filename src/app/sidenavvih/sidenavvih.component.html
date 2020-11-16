@@ -1,0 +1,74 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav position="end" #sidenav  mode="side" class="example-sidenav" [ngStyle]="{ 'width.em': sidenavWidth }" opened="true" (mouseenter)="increase();"
+    (mouseleave)="decrease();">
+    <div class="logomain"><mat-icon>dashboard</mat-icon></div>
+    <mat-tab-group [ngStyle]="{ 'opacity': sidenavOpacity }">
+      <mat-tab label="análisis de la situación actual"> 
+        <ngb-carousel [ngStyle]="{ 'opacity': sidenavOpacity }">
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <h5 position="start" style="margin-left: 5%;"> Total de contagios confirmados entre 2006 al 2015 </h5>
+              <img  position="start" style="margin-left: 5%;border-radius: 2%;" src="https://res.cloudinary.com/dbmokzjuz/image/upload/v1605480622/vih1.png" width=85% height=10%>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <h5 position="start" style="margin-left: 5%;"> Casos de contagio por relaciones heterosexuales</h5>
+              <img  position="start" style="margin-left: 5%;border-radius: 2%;" src="https://res.cloudinary.com/dbmokzjuz/image/upload/v1605480622/vih2.png" width=85% height=10%>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <h5 position="start" style="margin-left: 5%;"> Casos de contagio por relaciones homosexuales</h5>
+              <img  position="start" style="margin-left: 5%;border-radius: 2%;" src="https://res.cloudinary.com/dbmokzjuz/image/upload/v1605480621/vih3.png" width=85% height=10%>
+            </div>
+          </ng-template>
+    
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <h5 position="start" style="margin-left: 5%;"> Casos de contagio por transmición vertical (madre a hijo)</h5>
+              <img  position="start" style="margin-left: 5%;border-radius: 2%;" src="https://res.cloudinary.com/dbmokzjuz/image/upload/v1605480621/vih4.png" width=85% height=10%>
+            </div>
+          </ng-template>
+    
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <h5 position="start" style="margin-left: 5%;"> Casos de contagio por inyección</h5>
+              <img  position="start" style="margin-left: 5%;border-radius: 2%;" src="https://res.cloudinary.com/dbmokzjuz/image/upload/v1605480622/vih5.png" width=85% height=10%>
+            </div>
+          </ng-template>
+          
+        </ngb-carousel>
+        <h5  [ngStyle]="{ 'opacity': sidenavOpacity }" position="start" style="margin-left: 5%;">Proporción en base a género:</h5>
+        <img [ngStyle]="{ 'opacity': sidenavOpacity }" position="start" style="margin-left: 5%;border-radius: 2%;" src="https://res.cloudinary.com/dbmokzjuz/image/upload/v1605480622/vih6.png" width=85% height=50%>
+       
+      
+      </mat-tab>
+      <mat-tab label="Cluster"> 
+        <h5 position="start" style="margin-left: 5%;"> Cluster por grupos de transmición</h5>
+        <img  position="start" style="margin-left: 5%;border-radius: 2%;" src="https://res.cloudinary.com/dbmokzjuz/image/upload/v1605480622/vihcluster.png" width=75% height=70%> 
+        <p>El cluster se encarga de clasificar los países en grupos de transmisión, es decir grupos de países que fueron infectados por el virus en periodos de tiempo similares. </p>
+        <h6 position="start" style="margin-left: 5%;"> Grupo 1</h6>
+        
+      </mat-tab>
+      <mat-tab label="Predicción"> 
+        <h5 position="start" style="margin-left: 5%;"> Prediccion</h5>
+        <img  position="start" style="margin-left: 5%;border-radius: 2%;" src="https://res.cloudinary.com/dbmokzjuz/image/upload/v1605484318/vihprediccion.png" width=75% height=80%> 
+        <h6>¿Que es Lasso?</h6>
+        <p>La regresión LASSO nos muestra que los casos de VIH SIDA están por aumentar siendo apoyados el error cuadrático medio (MSE) y el error medio cuadrado (MAE) los cuales  deben estar cercanos a ceros.</p>
+      </mat-tab>
+    </mat-tab-group>
+    
+  </mat-sidenav>
+
+  <div class="example-sidenav-content">
+    <!-- <router-outlet></router-outlet> -->
+    <body>
+      <div style="position: relative; left: 0; top: 0; height: 100%;">
+        <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><small><a href="//radiohead-99.maps.arcgis.com/apps/Embed/index.html?webmap=e3f50c259d4748ceb18ea1d47b99b889&extent=-69.5701,-26.2362,69.0334,45.674&zoom=true&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=dark" style="color:#0000FF;text-align:left" target="_blank">View larger map</a></small><br><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="VIH" src="//radiohead-99.maps.arcgis.com/apps/Embed/index.html?webmap=e3f50c259d4748ceb18ea1d47b99b889&extent=-69.5701,-26.2362,69.0334,45.674&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=dark"></iframe></div>
+      </div>
+    </body>
+  </div>
+
+
+</mat-sidenav-container>
