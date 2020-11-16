@@ -15,6 +15,10 @@ export class SidenavComponent implements OnInit {
 
   @Input() stringImage: string;
   @Input() stringImage1: string;
+  @Input() stringImage2: string;
+  @Input() stringImage3: string;
+  @Input() stringImage4: string;
+  @Input() stringImage5: string;
 
   ngOnInit() {
 

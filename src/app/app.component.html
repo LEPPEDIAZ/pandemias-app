@@ -21,15 +21,14 @@
   </mat-tab>
   <mat-tab> 
     <ng-template mat-tab-label>
-      <span (click)="searchImage();searchImage1()">COVID-19</span>
+      <span (click)="searchImage();searchImage1();searchImage2();searchImage3();searchImage4();searchImage5()">COVID-19</span>
     </ng-template>
      <body>
       <div style="position: relative; left: 0; top: 0; height: 100%;">
         <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><small><a href="//radiohead-99.maps.arcgis.com/apps/Embed/index.html?webmap=8d71dca4e03c421bb983c761bf28df1c&extent=-145.8387,-63.2822,131.3684,59.7463&zoom=true&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=dark" style="color:#0000FF;text-align:left" target="_blank">View larger map</a></small><br><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="only covid" src="//radiohead-99.maps.arcgis.com/apps/Embed/index.html?webmap=8d71dca4e03c421bb983c761bf28df1c&extent=-145.8387,-63.2822,131.3684,59.7463&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=dark"></iframe></div>
       </div>
     </body>
-    <app-sidenav [stringImage]="stringImage"></app-sidenav>
-    <app-sidenav [stringImage1]="stringImage1"></app-sidenav>
+    <app-sidenav [stringImage]="stringImage" [stringImage1]="stringImage1" [stringImage2]="stringImage2" [stringImage3]="stringImage3" [stringImage4]="stringImage4" [stringImage5]="stringImage5"></app-sidenav>
     
      
   </mat-tab>

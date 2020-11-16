@@ -8,8 +8,14 @@
         <ngb-carousel [ngStyle]="{ 'opacity': sidenavOpacity }">
           <ng-template ngbSlide>
             <div class="wrapper">
-              <h5 position="start" style="margin-left: 5%;"> Total de contagios confirmados entre 2006 al 2015 </h5>
-              <img position="start" style="margin-left: 5%;border-radius: 2%;" [src]="_DomSanitizationService.bypassSecurityTrustUrl(stringImage1)" alt="Graph 0" width=95% height=60%/>  
+              <h5 position="start" style="margin-left: 5%;"> Proporción entre casos recuperados, confirmados y casos de mortalidad </h5>
+              <img position="start" style="margin-left: 5%;border-radius: 2%;" [src]="_DomSanitizationService.bypassSecurityTrustUrl(stringImage1)" alt="Graph 2" width=95% height=60%/>  
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <h5 position="start" style="margin-left: 5%;"> Aumento respecto al día anterior </h5>
+              <img position="start" style="margin-left: 5%;border-radius: 2%;" [src]="_DomSanitizationService.bypassSecurityTrustUrl(stringImage2)" alt="Graph 3" width=95% height=60%/>  
             </div>
           </ng-template>
         </ngb-carousel>
@@ -19,7 +25,29 @@
         <p>El cluster se encarga de clasificar los países en grupos de transmisión, es decir grupos de países que fueron infectados por el virus en periodos de tiempo similares. </p>
         <img position="start" style="margin-left: 5%;border-radius: 2%;" [src]="_DomSanitizationService.bypassSecurityTrustUrl(stringImage)" alt="Graph 1" width=95% height=60%/>  
       </mat-tab>
-      <mat-tab label="Predicción"> contenido 2</mat-tab>
+      <mat-tab label="Predicción"> 
+        <ngb-carousel [ngStyle]="{ 'opacity': sidenavOpacity }">
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <h5 position="start" style="margin-left: 5%;"> Predicción sobre casos confirmados </h5>
+              <img position="start" style="margin-left: 5%;border-radius: 2%;" [src]="_DomSanitizationService.bypassSecurityTrustUrl(stringImage3)" alt="Graph 2" width=95% height=60%/>  
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <h5 position="start" style="margin-left: 5%;"> Predicción sobre casos de mortalidad </h5>
+              <img position="start" style="margin-left: 5%;border-radius: 2%;" [src]="_DomSanitizationService.bypassSecurityTrustUrl(stringImage4)" alt="Graph 3" width=95% height=60%/>  
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="wrapper">
+              <h5 position="start" style="margin-left: 5%;"> Predicción sobre casos de recuperaciones </h5>
+              <img position="start" style="margin-left: 5%;border-radius: 2%;" [src]="_DomSanitizationService.bypassSecurityTrustUrl(stringImage5)" alt="Graph 4" width=95% height=60%/>  
+            </div>
+          </ng-template>
+        </ngb-carousel>
+
+      </mat-tab>
 
     </mat-tab-group>
     

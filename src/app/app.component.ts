@@ -15,6 +15,10 @@ export class AppComponent {
 
   stringImage = '';
   stringImage1 = '';
+  stringImage2 = '';
+  stringImage3 = '';
+  stringImage4 = '';
+  stringImage5 = '';
 
   openDialog() {
     const dialogRef = this.dialog.open(DialogContentExample);
@@ -45,6 +49,56 @@ export class AppComponent {
           const searchResult = res;
           console.log(searchResult);
           this.stringImage1 = 'data:image/png;base64, ' + searchResult.text();
+        }
+      );
+  }
+  searchImage2(){
+    const urlOfApi = 'http://3.138.213.189/covid/crecimiento_diario_covid';
+    this.http.get(urlOfApi)
+      .subscribe(
+        (res: Response) =>
+        {
+          const searchResult = res;
+          console.log(searchResult);
+          this.stringImage2 = 'data:image/png;base64, ' + searchResult.text();
+        }
+      );
+  }
+
+  searchImage3(){
+    const urlOfApi = 'http://3.138.213.189/covid/confirmados_red_neuronal';
+    this.http.get(urlOfApi)
+      .subscribe(
+        (res: Response) =>
+        {
+          const searchResult = res;
+          console.log(searchResult);
+          this.stringImage3 = 'data:image/png;base64, ' + searchResult.text();
+        }
+      );
+  }
+  searchImage4(){
+    const urlOfApi = 'http://3.138.213.189/covid/mortalidad_red_neuronal';
+    this.http.get(urlOfApi)
+      .subscribe(
+        (res: Response) =>
+        {
+          const searchResult = res;
+          console.log(searchResult);
+          this.stringImage4 = 'data:image/png;base64, ' + searchResult.text();
+        }
+      );
+  }
+
+  searchImage5(){
+    const urlOfApi = 'http://3.138.213.189/covid/recuperacion_red_neuronal';
+    this.http.get(urlOfApi)
+      .subscribe(
+        (res: Response) =>
+        {
+          const searchResult = res;
+          console.log(searchResult);
+          this.stringImage5 = 'data:image/png;base64, ' + searchResult.text();
         }
       );
   }
