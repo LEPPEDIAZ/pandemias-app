@@ -4,7 +4,7 @@
     <div class="logomain"><mat-icon>dashboard</mat-icon></div>
   
     <mat-tab-group [ngStyle]="{ 'opacity': sidenavOpacity }">
-      <mat-tab label="análisis de la situación actual"> contenido 1 
+      <mat-tab label="análisis de la situación actual">  
         <ngb-carousel [ngStyle]="{ 'opacity': sidenavOpacity }">
           <ng-template ngbSlide>
             <div class="wrapper">
@@ -46,6 +46,13 @@
             </div>
           </ng-template>
         </ngb-carousel>
+        <h4 position="start"> Predicción sobre pais</h4>
+        <mat-form-field style="margin-left: 5%;" class="example-full-width">
+          <mat-label>Seleccionar pais por buscar:</mat-label>
+          <input matInput placeholder="pais_seleccionar" value="Guatemala" [(ngModel)]=searchString>
+        </mat-form-field>
+        <button mat-button color="accent" (click)="searchImagecountry()">Buscar</button>
+        <img position="start" style="margin-left: 5%;border-radius: 2%;" [src]="_DomSanitizationService.bypassSecurityTrustUrl(stringImage6)" alt="Graph 4" width=95% height=60%/>
 
       </mat-tab>
 
