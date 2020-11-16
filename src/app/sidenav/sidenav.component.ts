@@ -7,24 +7,27 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent implements OnInit {
-
+  sidenavOpacity = 0;
   sidenavWidth = 3;
   ngStyle: string;
   constructor(public _DomSanitizationService: DomSanitizer) {
   }
 
   @Input() stringImage: string;
+  @Input() stringImage1: string;
 
   ngOnInit() {
 
   }
 
   increase() {
-    this.sidenavWidth = 35;
+    this.sidenavWidth =  50;
     console.log('increase sidenav width');
+    this.sidenavOpacity = 1;
   }
   decrease() {
     this.sidenavWidth = 3;
+    this.sidenavOpacity = 0;
     console.log('decrease sidenav width');
   }
   // sidenavToggle() {

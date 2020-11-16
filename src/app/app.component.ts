@@ -14,6 +14,7 @@ export class AppComponent {
   constructor(public dialog: MatDialog, private http: Http, public _DomSanitizationService: DomSanitizer) {}
 
   stringImage = '';
+  stringImage1 = '';
 
   openDialog() {
     const dialogRef = this.dialog.open(DialogContentExample);
@@ -32,6 +33,18 @@ export class AppComponent {
           const searchResult = res;
           console.log(searchResult);
           this.stringImage = 'data:image/png;base64, ' + searchResult.text();
+        }
+      );
+  }
+  searchImage1(){
+    const urlOfApi = 'http://3.138.213.189/covid/proporcion_de_contagios_covid';
+    this.http.get(urlOfApi)
+      .subscribe(
+        (res: Response) =>
+        {
+          const searchResult = res;
+          console.log(searchResult);
+          this.stringImage1 = 'data:image/png;base64, ' + searchResult.text();
         }
       );
   }

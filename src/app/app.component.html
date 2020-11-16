@@ -21,7 +21,7 @@
   </mat-tab>
   <mat-tab> 
     <ng-template mat-tab-label>
-      <span (click)="searchImage()">COVID-19</span>
+      <span (click)="searchImage();searchImage1()">COVID-19</span>
     </ng-template>
      <body>
       <div style="position: relative; left: 0; top: 0; height: 100%;">
@@ -29,6 +29,7 @@
       </div>
     </body>
     <app-sidenav [stringImage]="stringImage"></app-sidenav>
+    <app-sidenav [stringImage1]="stringImage1"></app-sidenav>
     
      
   </mat-tab>
