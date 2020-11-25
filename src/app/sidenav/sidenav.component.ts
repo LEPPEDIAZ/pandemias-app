@@ -41,7 +41,7 @@ export class SidenavComponent implements OnInit {
     console.log('decrease sidenav width');
   }
   searchImagecountry(){
-    const urlOfApi = 'http://3.138.213.189/covid/confirmados_red_neuronal_pais/' + this.searchString;
+    const urlOfApi = 'https://mochi.software/covid/confirmados_red_neuronal_pais/' + this.searchString;
     this.http.get(urlOfApi)
       .subscribe(
         (res: Response) =>

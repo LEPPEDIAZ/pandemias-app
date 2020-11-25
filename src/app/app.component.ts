@@ -29,7 +29,7 @@ export class AppComponent {
   }
 
   searchImage(){
-    const urlOfApi = 'http://3.138.213.189/covid/get_cluster';
+    const urlOfApi = 'https://mochi.software/covid/get_cluster';
     this.http.get(urlOfApi)
       .subscribe(
         (res: Response) =>
@@ -41,7 +41,7 @@ export class AppComponent {
       );
   }
   searchImage1(){
-    const urlOfApi = 'http://3.138.213.189/covid/proporcion_de_contagios_covid';
+    const urlOfApi = 'https://mochi.software/covid/proporcion_de_contagios_covid';
     this.http.get(urlOfApi)
       .subscribe(
         (res: Response) =>
@@ -53,7 +53,7 @@ export class AppComponent {
       );
   }
   searchImage2(){
-    const urlOfApi = 'http://3.138.213.189/covid/crecimiento_diario_covid';
+    const urlOfApi = 'https://mochi.software/covid/crecimiento_diario_covid';
     this.http.get(urlOfApi)
       .subscribe(
         (res: Response) =>
@@ -66,7 +66,7 @@ export class AppComponent {
   }
 
   searchImage3(){
-    const urlOfApi = 'http://3.138.213.189/covid/confirmados_red_neuronal';
+    const urlOfApi = 'https://mochi.software/covid/confirmados_red_neuronal';
     this.http.get(urlOfApi)
       .subscribe(
         (res: Response) =>
@@ -78,7 +78,7 @@ export class AppComponent {
       );
   }
   searchImage4(){
-    const urlOfApi = 'http://3.138.213.189/covid/mortalidad_red_neuronal';
+    const urlOfApi = 'https://mochi.software/covid/mortalidad_red_neuronal';
     this.http.get(urlOfApi)
       .subscribe(
         (res: Response) =>
@@ -91,7 +91,7 @@ export class AppComponent {
   }
 
   searchImage5(){
-    const urlOfApi = 'http://3.138.213.189/covid/recuperacion_red_neuronal';
+    const urlOfApi = 'https://mochi.software/covid/recuperacion_red_neuronal';
     this.http.get(urlOfApi)
       .subscribe(
         (res: Response) =>
