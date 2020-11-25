@@ -20,6 +20,9 @@ export class AppComponent {
   stringImage4 = '';
   stringImage5 = '';
 
+  stringImage7 = '';
+  stringImage8 = '';
+
   openDialog() {
     const dialogRef = this.dialog.open(DialogContentExample);
 
@@ -99,6 +102,30 @@ export class AppComponent {
           const searchResult = res;
           console.log(searchResult);
           this.stringImage5 = 'data:image/png;base64, ' + searchResult.text();
+        }
+      );
+  }
+  searchImage7(){
+    const urlOfApi = 'https://mochi.software/covid/total';
+    this.http.get(urlOfApi)
+      .subscribe(
+        (res: Response) =>
+        {
+          const searchResult = res;
+          console.log(searchResult.text());
+          this.stringImage7 = searchResult.text();
+        }
+      );
+  }
+  searchImage8(){
+    const urlOfApi = 'https://mochi.software/covid/fecha_actual';
+    this.http.get(urlOfApi)
+      .subscribe(
+        (res: Response) =>
+        {
+          const searchResult = res;
+          console.log("date:"+ searchResult.text());
+          this.stringImage8 =  searchResult.text();
         }
       );
   }

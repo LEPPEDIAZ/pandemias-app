@@ -46,9 +46,9 @@
       </mat-tab>
       <mat-tab label="Cluster"> 
         <h5 position="start" style="margin-left: 5%;"> Cluster por grupos de transmición</h5>
-        <img  position="start" style="margin-left: 5%;border-radius: 2%;" src="https://res.cloudinary.com/dbmokzjuz/image/upload/v1605480622/vihcluster.png" width=75% height=40%> 
+        <img  position="start" style="margin-left: 5%;border-radius: 2%;" src="https://res.cloudinary.com/dbmokzjuz/image/upload/v1605480622/vihcluster.png" width=75% height=300px> 
         <p>El cluster se encarga de clasificar los países en grupos de transmisión, es decir grupos de países que fueron infectados por el virus en periodos de tiempo similares. </p>
-        <h6 position="start" style="margin-left: 5%;"> Grupo 1</h6>
+        
         <table mat-table [dataSource]="dataSource" style="background-color: black; width:100%;">
 
           <!--- Note that these columns can be defined in any order.
@@ -89,7 +89,7 @@
     <!-- <router-outlet></router-outlet> -->
     <body>
       <div style="position: relative; left: 0; top: 0; height: 100%;">
-        <p style="opacity: 0.8; color: white; margin-left:5%; margin-right: 5%;font-size: 15px;"> Se debe acercar al mapa para poder ver mas en detalle todos los componentes de VIH SIDA. Al realizar ¨click¨sobre los componentes se desplegaran gráficos y detalle del mismo. </p>
+        <p style="opacity: 0.8; color: white; margin-left:5%; margin-right: 5%;font-size: 15px;"> Se debe acercar al mapa para poder ver mas en detalle todos los componentes de VIH SIDA. Al realizar ¨click¨sobre los componentes se desplegarán gráficos y detalle del mismo. Presione los diferentes botones de la izquierda para tener control sobre el mapa. Por otro lado, presione el botón de la derecha para obtener más información sobre el comportamiento de la enfermedad y sus predicciones.  </p>
         <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><small><a href="//radiohead-99.maps.arcgis.com/apps/Embed/index.html?webmap=e3f50c259d4748ceb18ea1d47b99b889&extent=-69.5701,-26.2362,69.0334,45.674&zoom=true&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=dark" style="color:#0000FF;text-align:left" target="_blank">View larger map</a></small><br><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="VIH" src="//radiohead-99.maps.arcgis.com/apps/Embed/index.html?webmap=e3f50c259d4748ceb18ea1d47b99b889&extent=-69.5701,-26.2362,69.0334,45.674&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&legendlayers=true&basemap_gallery=true&disable_scroll=true&theme=dark"></iframe></div>
       </div>
     </body>
